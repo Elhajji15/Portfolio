@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">MyPortfolio</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Dark Mode Toggle Button -->
+                <li><button id="dark-mode-toggle" class="toggle-btn">🌙 Dark Mode</button></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+   <!-- Updated Hero Section with Typing Animation -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">Hussein Said</span></h1>
+        <!-- The text inside 'typing-text' will change dynamically -->
+        <p>I am a <span id="typing-text" class="typing-effect"></span></p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+</section>
+
+<!-- New Skills Section -->
+<section id="skills" class="skills hidden-element">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>HTML5</h3>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-card">
+            <h3>CSS3</h3>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill-card">
+            <h3>Git & GitHub</h3>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+ <!-- About Section with Animation -->
+<section id="about" class="about hidden-element">
+    <h2>About Me</h2>
+    <p>I'm a front-end developer specializing in HTML, CSS, and JavaScript, focused on building clean, responsive, and user-friendly web interfaces. I enjoy turning designs into functional, accessible websites and paying close attention to performance and cross-browser compatibility. I'm continually learning modern front-end practices and enjoy solving UI/UX challenges with efficient, maintainable code.
+
+</p>
+</section>
+
+<!-- Projects Section with Animation -->
+<section id="projects" class="projects hidden-element">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+        <!-- You can also add hidden-element directly to cards for a staggered effect -->
+        <div class="project-card">
+            <h3>Project One</h3>
+            <p>A responsive supermarket website built using HTML, CSS, and JavaScript as my first web development project. The site features a clean, user-friendly layout showcasing products organized by category, with a navigation menu, product listings with images and prices, and an interactive shopping cart.</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project Two</h3>
+            <p>A simple, functional calculator built using HTML, CSS, and JavaScript. The project features a clean and responsive interface for performing basic arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Live Contact Form Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>Want to work together? Drop me a message directly!</p>
+        
+        <!-- Replace 'your-formspree-id' later -->
+        <form action="https://formspree.io/f/xqererpp" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 DevPortfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
